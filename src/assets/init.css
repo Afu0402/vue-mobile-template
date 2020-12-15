@@ -1,0 +1,50 @@
+/* 重置基本样式 */
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(246, 245, 245);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+header,
+aside,
+section {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+#app {
+  height: 100%;
+}
