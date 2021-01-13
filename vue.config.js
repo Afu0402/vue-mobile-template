@@ -1,4 +1,7 @@
 
+const path = require("path");
+const theme = path.resolve(__dirname, "src/assets/vant-theme.less");
+
 module.exports = {
     publicPath: './',
     devServer: {
@@ -22,6 +25,13 @@ module.exports = {
                         mediaQuery: false
                     }),
                 ]
+            },
+            less: {
+                lessOptions: {
+                    modifyVars: {
+                        hack: `true; @import "${theme}";`,
+                    }
+                }
             }
         }
     },

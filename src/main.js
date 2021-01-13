@@ -12,6 +12,7 @@ import 'normalize.css/normalize.css' // A modern alternative to CSS resets http:
 import Vant from 'vant';
 import { Notify } from 'vant';
 import 'vant/lib/index.css';
+import 'vant/lib/index.less';
 Vue.prototype.$notify = Notify;
 Vue.use(Vant);
 
