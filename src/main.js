@@ -5,7 +5,6 @@ Vue.config.productionTip = false;
 
 
 //引入jsbridge
-import "@/common/jsBridge.js";
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets http://necolas.github.io/normalize.css/
 
 //添加Vant组件

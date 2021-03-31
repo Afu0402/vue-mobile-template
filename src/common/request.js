@@ -1,15 +1,13 @@
 import axios from 'axios';
-import qs from 'qs'
 import store from '@/store'
 import { Notify, Dialog, Loading, Toast } from 'vant';
 const service = axios.create({
     baseURL: '',
     headers: {
-        post: {
-            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-        }
-    },
-    timeout: 30000
+        "Content-Type": "application/json;charset=UTF-8",
+        sm4key: ciphertext,
+      },
+      timeout: 20000,
 })
 /**
  * 添加请求拦截，
@@ -40,7 +38,7 @@ service.interceptors.response.use((response) => {
  * @options {obj} error：是否提示错误, loading:请求时是否显示loading;
  */
 
-function request(config, options = {
+ export function request(config, options = {
     error: true,
     loading: true,
 }) {

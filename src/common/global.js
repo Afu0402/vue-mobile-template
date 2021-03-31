@@ -1,3 +1,6 @@
+import appjsbridge from './appjsbridge.js'
+global.$appjsbridge = appjsbridge
+
 //解决IOS端键盘上移后不能回落的问题。
 document.documentElement.addEventListener('touchstart', function (event) {
     if (event.touches.length > 1) {
